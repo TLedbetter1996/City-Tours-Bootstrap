@@ -1,0 +1,62 @@
+body {
+    font-family:'Montserrat', sans-serif;
+}
+
+header, h1, h2, h3 {
+    font-family:'Montserrat', sans-serif;
+}
+
+head {
+    color: #470303;
+}
+
+body {
+    color: #CEC8FF;
+
+}
+
+footer {
+    background-image: linear-gradient(white, lightblue);
+    padding: 20px 0;
+    color: black;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, lightblue, cyan, rgb(0, 225, 255));
+    color: azure;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: skyblue;
+    color: lightcyan;
+}
+
+img {
+    border-radius: 8px
+}
+
+div.scrollmenu {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+div.scrollmenu a:hover {
+    background-color: #777;
+  }

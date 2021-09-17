@@ -1,0 +1,205 @@
+<!-- Dallas Detour Plan
+
+    Goal: Finish front page 
+          checked! l1. Add color and style to the header portion. It looks pretty bland right now
+          checked! l2. Finish navbar navigation 
+        l3. Add the pictures for the carousel w./ paragraph 
+            -One food restaurant picture and paragraph
+            -One picture of the Dallas basketball stadium
+            -One upcoming events picture 
+            -One about us picture (question marks? a picture of the overall city )
+        l4. Create footer for the bottom of the page (use similar to nucampsite folder)
+        l
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head begins the format of the page -->
+  <head> 
+          <!-- Required meta tags always come first. Meta tag is the code that allows the website to use Bootstrap -->
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+          <!-- Bootstrap CSS -->
+          <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+            <!-- Additional CSS must be placed after Boostrap CSS-->
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+          <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+          <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+          <link rel="stylesheet" href="css/styles.css" />     
+
+          <title>DallasDetour</title>
+   </head>
+
+    <body>
+          <!-- Navbar, tabs and such -->
+        <header class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row row-content">
+                    <div class="col text-center">
+                          <h1><strong>Dallas * Detour</strong> </h1>
+                          <h2>Explore your city </h2>
+                    </div>
+                    <div class="col text-center">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Questions & Opinions 
+                      </button>
+                    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Questions & Opinions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Example Text</label>
+          <input type="text" class="form-control">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                </div>
+            </div>
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                      <li class="nav-item active">
+                      <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="about.html">About us</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="events.html">Events</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="activities.html">Activities</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="food.html">Food</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav> 
+         </header>     
+        <!-- Carousel container , I need to input the pictures -->
+      <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">About us</li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/city.jpg" class="d-block w-100" alt="dallasCity" style="width: 200px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>About us </h1>
+                  <p>Explore your local city</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/football.jpg" class="d-block w-100" alt="aac.jpg" style="width: 200px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1> Events </h1>
+                  <h5>Sports, music, and entertainment </h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/yoga.jpg" class="d-block w-100" alt="..." style="width: 200px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1> Activities </h1>
+                  <h5>Bars, zoom activities, classes</h5>
+                </div>
+              </div>
+                <div class="carousel-item">
+                  <img src="img/food.jpg" class="d-block w-100" alt="..." style="width: 200px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1> Food </h1>
+                    <h5>Check out great food near you! </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+          <footer class="site-fotter">
+            <div class="container"></div>
+                <div class="row">             
+                    <div class="col-4 col-sm-2 offset-1">
+                        <h5>Links</h5>
+                    <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="activities.html">Activities</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="events.html">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-5 text-center ">
+                      <h5>Social</h5>
+                          <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                          <a class="btn btn-social-icon btn-reddit" href="http://reddit.com/"><i class="fa fa-reddit"></i></a>
+                          <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                          
+                      </div>
+                    <div class="col-sm-4 text-center">
+                        <a role="button" class="btn btn-link" href= "tel:+7082480180">"<i class="fa fa-phone"></i> 708-248-0180</a><br />
+                        <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> tledbetter1996@gmail.com</a>
+                    </div>                
+              </div>
+            </div>
+        </footer>
+          
+        <!-- Scripts add the Javascript files to be used by bootstrap jQuery must come first, then Popper.js, then the Boostrap Javascript plugins.-->
+        <!-- build:js js/main.js -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <!-- endbuild -->
+
+    </body>
+
+    </html>
+
+ 
